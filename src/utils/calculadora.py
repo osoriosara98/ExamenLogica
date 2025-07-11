@@ -3,19 +3,18 @@ import numpy as np
 
 class Calculadora:
     """
-    Clase que implementa cálculos manuales sin usar funciones automáticas de numpy
-    como np.mean, np.argmax, np.argmin
+    Clase que implementa cálculos manuales
     """
     
     def calcular_promedio(self, array_datos):
         """
-        Calcula el promedio de un array numpy de forma manual
+        Calcula el promedio de un array numpy 
         
         Args:
             array_datos: Array numpy con los datos
             
         Returns:
-            float: Promedio calculado manualmente
+            float: Promedio calculado 
         """
         suma = 0.0
         contador = 0
@@ -32,7 +31,7 @@ class Calculadora:
     
     def calcular_suma(self, array_datos):
         """
-        Calcula la suma de un array numpy de forma manual
+        Calcula la suma de un array numpy 
         
         Args:
             array_datos: Array numpy con los datos
@@ -50,7 +49,7 @@ class Calculadora:
     
     def encontrar_maximo(self, array_datos):
         """
-        Encuentra el valor máximo y su índice de forma manual
+        Encuentra el valor máximo y su índice
         
         Args:
             array_datos: Array numpy con los datos
@@ -98,7 +97,7 @@ class Calculadora:
     
     def calcular_estadisticas(self, array_datos):
         """
-        Calcula estadísticas básicas de forma manual
+        Calcula estadísticas básicas
         
         Args:
             array_datos: Array numpy con los datos
@@ -148,7 +147,7 @@ class Calculadora:
     
     def comparar_arrays(self, array1, array2):
         """
-        Compara dos arrays elemento por elemento de forma manual
+        Compara dos arrays elemento por elemento 
         
         Args:
             array1: Primer array numpy
