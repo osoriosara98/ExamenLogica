@@ -164,8 +164,8 @@ class InterfazUsuario:
                 print(f"Día {dia+1:2d}: {datos[dia]:6.2f}%")
             
             # Calcular estadísticas
-            promedio = self.centro.calculadora.calcular_promedio_manual(datos)
-            estadisticas = self.centro.calculadora.calcular_estadisticas_manual(datos)
+            promedio = self.centro.calculadora.calcular_promedio(datos)
+            estadisticas = self.centro.calculadora.calcular_estadisticas(datos)
             
             print(f"\nEstadísticas de {nombre_servidor}:")
             print(f"Promedio: {promedio:.2f}%")
@@ -192,9 +192,9 @@ class InterfazUsuario:
                     print(f"{self.centro.nombres_servidores[i]:<15}: {datos[i]:6.2f}%")
             
             # Calcular estadísticas del día
-            suma_total = self.centro.calculadora.calcular_suma_manual(datos)
-            promedio_dia = self.centro.calculadora.calcular_promedio_manual(datos)
-            estadisticas = self.centro.calculadora.calcular_estadisticas_manual(datos)
+            suma_total = self.centro.calculadora.calcular_suma(datos)
+            promedio_dia = self.centro.calculadora.calcular_promedio(datos)
+            estadisticas = self.centro.calculadora.calcular_estadisticas(datos)
             
             print(f"\nEstadísticas del día {dia}:")
             print(f"Suma total: {suma_total:.2f}%")
